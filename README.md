@@ -1,5 +1,7 @@
 # Computational Commutative Algebra and Geometry
- 
+
+![](Slides/sudoku.svg)
+
 Introduction
 ------------
 
