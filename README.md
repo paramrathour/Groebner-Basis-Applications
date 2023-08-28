@@ -1,4 +1,4 @@
-# Dining Philosophers
+# Computational Commutative Algebra and Geometry
  
 Introduction
 ------------
