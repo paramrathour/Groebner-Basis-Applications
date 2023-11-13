@@ -30,6 +30,11 @@
 \newcommand{\vLine}{\unskip\ \vrule\ }
 \renewcommand{\arraystretch}{1.3}
 
+%---------------------- ToC Lines ---------------------------%
+\makeatletter
+\renewcommand*\l@section{\@dottedtocline{1}{1.5em}{2.3em}}
+\makeatother
+
 %---------------------- Environments ---------------------------%
 \makeatletter
 \def\th@plain{%

@@ -11,7 +11,7 @@
     %\texttt{paramrathour3435@gmail.com}\vspace{20pt}}\\
     {\Large  Guide: Prof. Debasattam Pal}}
 \date{\today}
-\addbibresource{references.bib}
+\addbibresource{../references.bib}
 %\includeonly{Files/Practice Problems 7}
 %\includeonly{Files/Hints}
 
@@ -232,9 +232,9 @@ It turns out the same does not hold for multivariate polynomials in general. Con
 \begin{proof}
 We show both one-by-one
 \begin{itemize}
-    \item $a = (a_1, a_2, \ldots, a_n)\in V_1$ and $a \in V_2$ is equivalent to $a \in V_1 \cap V_2$, as varieties are set so their intersection is also a set. Also, both the statement means $f_i(a)=0=g_j(a), \forall i,j$. Hence, the result.
+    \item $a = (a_1, a_2, \ldots, a_n)\in V_1$ and $a \in V_2$ is equivalent to $a \in V_1 \cap V_2$, as varieties are set so their intersection is also a set. Also, both the statement means $f_i(a)=0=g_j(a)\ \forall i,j$. Hence, the result.
 
-    \item $a = (a_1, a_2, \ldots, a_n)\in V_1$ or $a \in V_2$ is equivalent to $a \in V_1 \cup V_2$, as varieties are set so their union is also a set. $a \in V_1 $ implies $f_i(a)=0, \forall i$ which implies $f_i(a)\cdot g_j(a)=0, \forall i$ implies $a\in V_1 \cup V_2$. Similarly, $a \in V_2 \Rightarrow a \in V_1 \cup V_2$. Hence $V_1 \cup V_2 \subseteq \V(f_i\cdot g_j \ | \ \forall i,j)$.
+    \item $a = (a_1, a_2, \ldots, a_n)\in V_1$ or $a \in V_2$ is equivalent to $a \in V_1 \cup V_2$, as varieties are set so their union is also a set. $a \in V_1 $ implies $f_i(a)=0\ \forall i$ which implies $f_i(a)\cdot g_j(a)=0\ \forall i, j$, which implies $a\in\V(f_i\cdot g_j \ | \ \forall i,j)$. Similarly, $a \in V_2 \Rightarrow a \in \V(f_i\cdot g_j \ | \ \forall i,j)$. Hence $V_1 \cup V_2 \subseteq \V(f_i\cdot g_j \ | \ \forall i,j)$.
 
     Now, to prove $\V(f_i\cdot g_j \ | \ \forall i,j) \subseteq V_1 \cup V_2$, we need to show $a\in \V(f_i\cdot g_j \ | \ \forall i,j) \Rightarrow a\in V_1 \cup V_2$. We will prove its contrapositive, i.e., $a\notin V_1, a\notin V_2 \Rightarrow a\notin \V(f_i\cdot g_j \ | \ \forall i,j)$.\\
     $a\notin V_1, a\notin V_2$ implies $\exists f_i, g_j$ such that $f_i(a)\neq0\neq g_j(a)$ which implies $a\notin \V(f_i\cdot g_j \ | \ \forall i,j)$.
@@ -265,7 +265,7 @@ Surprisingly, if we choose the underlying field carefully we can get the answer 
     \label{fig:variety_dim}
 \end{figure}
 \begin{note}
-    The ``dimension'' of a variety is not exactly as the dimension of vector space. See \ref{fig:variety_dim}, $\V(xz,yz)=\V(z)\cup\V(xy)$ as $xz=yz=0$ implies $z=0$ ($x-y$ plane) or $x=y=0$ ($z-$axis). The variety is a union of line and a plane, two different dimensional objects from linear algebra. Hence, the term needs to be defined appropriately first for an affine variety.
+    The ``dimension'' of a variety is not exactly the same as the dimension of vector space. See \ref{fig:variety_dim}, $\V(xz,yz)=\V(z)\cup\V(xy)$ as $xz=yz=0$ implies $z=0$ ($x-y$ plane) or $x=y=0$ ($z-$axis). The variety is a union of line and a plane, two different dimensional objects from linear algebra. Hence, the term needs to be defined appropriately first for an affine variety.
 \end{note}
 \section{Ideals}
 \begin{defn}[Ideal]
@@ -316,7 +316,7 @@ Notice, how the definition of an ideal seems similar to a vector space, and \ref
 \vspace{-1em}
 \begin{proof}
     Take $f\in\langle f_1,f_2,\ldots,f_s\rangle\Rightarrow \exists h_i\in\F[x_1, x_2, \ldots, x_n]$ such that $f =\sum_{i=1}^{s}h_{i}\cdot f_{i}$\\
-    Now, consider $a\in \V(f_1,f_2,\ldots,f_{s})\Rightarrow f_i(a)=0 \Rightarrow f(a)=0 \Rightarrow \I(V)$.
+    Now, consider $a\in \V(f_1,f_2,\ldots,f_{s})\Rightarrow f_i(a)=0 \Rightarrow f(a)=0 \Rightarrow f \in \I(V)$.
 \end{proof}
 \begin{note}
     The above containment need can be strict.\\
